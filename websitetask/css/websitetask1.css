@@ -1,0 +1,75 @@
+body,div,p,h1,h2,h3,h4,h5,h6,span{
+	margin: 0px;
+	padding:0px;
+}
+#left img{
+width:64px!important;
+margin:5px;
+}
+.rightcontent li a{
+	color:white!important;
+	padding:20px; 
+}
+.rightcontent :hover{
+	color:blue;
+	background-color:gray;
+text-decoration:underline; 
+}
+.heading{
+color:white!important;
+}
+#section p{
+font-size:16px;
+ margin-top:40px;
+ 
+}
+#section2{
+	/*padding-left:75px; */
+}	
+#section5 {
+	padding-left:75px;}
+
+#ending{
+	background-color:black;
+	width:100%; 
+	height:60px;
+
+}
+#ending p{
+	color:white;
+	padding-left:60px; 
+}
+#icon i{
+	color:white;
+	padding:18px; 
+	margin-top:10px;
+	border-radius:50%;
+	background-color:gray;  
+}
+#icon p{
+	margin-top:15px; 
+}
+	padding-left:0px;
+	padding-right:0px;
+}
+.register 
+#end{label{
+	color:white;
+	
+}
+.register input{
+	left:120px;
+}
+
+.modal-title{
+	padding-left:181px; 
+}
+#rigister input{
+	padding-left:50px; 
+}
+.modal-title {
+	color:white;
+}
+.modal-content{
+	background-color:black!important; 
+}

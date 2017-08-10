@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+</head>
+<body>
+<label>firstname</label><input type="text">
+<label>lastname</label><input type="text">
+<label>age</label><input type="text">
+<p id="demo"></p>
+<script>
+var person = new Object();
+person.firstName = "sandhya";
+person.lastName = "hanisha";
+person.age = 20;
+
+// person.firstName + " is " + person.age + " years old.";
+// localStorage.VARIABLE_NAME = 'VARIABLE_CONTENT';
+// localStorage.VARIABLE_NAME;
+localStorage.setItem('VARIABLE_NAME',person.firstName + " is " + person.age + " years old.");
+console.log(localStorage.VARIABLE_NAME);
+document.getElementById("demo").innerHTML=localStorage.getItem("VARIABLE_NAME");
+</script>
+</body>
+</html>

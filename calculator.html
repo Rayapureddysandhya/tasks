@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+</head>
+<body>
+<script>
+	var obj1=document.createElement("input");
+	var obj2=document.createElement("input");
+	var obj3=document.createElement("button");
+	var obj4=document.createElement("button");
+	var obj5=document.createElement("button");
+	var obj6=document.createElement("button");
+	var obj8=document.createElement("button");
+	var obj7=document.createElement("div");
+	var obj9=document.createElement("div");
+	obj1.placeholder="enter firstvalue";
+	obj2.placeholder="enter second value";
+     
+	obj3.innerHTML="ADD";
+	obj4.innerHTML="SUB";
+	obj5.innerHTML="MUL";
+	obj6.innerHTML="DIV";
+	obj8.innerHTML="multification";
+	obj3.addEventListener("click",f1);
+	obj4.addEventListener("click",f2);
+	obj5.addEventListener("click",f3);
+	obj6.addEventListener("click",f4);
+    obj8.addEventListener("click",f5);
+    obj8.addEventListener("click",f6);
+   
+	document.body.appendChild(obj1);
+	document.body.appendChild(obj2);
+	document.body.appendChild(obj3);
+	document.body.appendChild(obj4);
+	document.body.appendChild(obj5);
+	document.body.appendChild(obj6);
+	document.body.appendChild(obj7);
+	document.body.appendChild(obj8);
+	document.body.appendChild(obj9);
+
+
+	obj7.style.border="2px solid black";
+	obj7.style.width="400px";
+	obj7.style.height="200px";
+	obj7.style.marginTop="40px";
+	obj9.style.border="2px solid black";
+	obj9.style.width="300px";
+	obj9.style.height="200px";
+
+	function f1(){
+var a= obj1.value;  
+var b=obj2.value;
+	obj7.innerHTML=+a + + b;
+    }
+    function f2(){
+    	var c=obj1.value;
+    	var d=obj2.value;
+    	obj7.innerHTML=c-d;
+    }
+    function f3(){
+    	var e=obj1.value;
+    	var f=obj2.value;
+    	obj7.innerHTML=e*f;
+    }
+    function f4(){
+    	var g=obj1.value;
+    	var h=obj2.value;
+    	obj7.innerHTML=g/h;
+
+    }
+    function f5(){
+    	var res="";
+        var j=obj1.value;
+       
+    	for(i=1;i<=10;i++){
+       res+=j+"*"+i+"="+(j*i)+"</br>";
+       
+    	}
+    	obj7.innerHTML=res;
+    	
+    	
+    }
+    function f6(){
+    	var res="";
+    	var h=obj2.value;
+     
+    	for(i=1;i<=20;i++)
+    	{
+    		res+=h+"*"+i+"="+(h*i)+"</br>"
+
+    	}
+    	
+    	obj9.innerHTML=res;
+    	
+    }
+</script>
+</body>
+</html>

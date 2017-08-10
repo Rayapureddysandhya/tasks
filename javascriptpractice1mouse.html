@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MOUSEOVER</title>
+	<style>
+		
+	</style>
+</head>
+<body>
+	 <div class="images">
+	 <p id="demo"></p>
+	    <script>
+	 	var img1= document.createElement("img");
+	 	var img2= document.createElement("img");
+	 	var img3= document.createElement("img");
+	 	var img4= document.createElement("img");
+	 	var x=document.createElement("input");
+	 	x.type="text";
+	 		img1.setAttribute("src" ,"layer1.png");
+	 		img2. setAttribute("src" ,"layer1.png");
+	 	    img3. setAttribute("src" ,"layer1.png");
+	 	    img4. setAttribute("src" ,"layer1.png"); 
+	 
+         document.body.appendChild(img1);
+         document.body.appendChild(img2);
+         document.body.appendChild(img3);
+         document.body.appendChild(img4);
+         document.body.appendChild(x);
+     img1.addEventListener("mouseover",first);
+     img1.addEventListener("mouseout",first1);
+     img2.addEventListener("mouseover",second);
+     img2.addEventListener("mouseout",second1);
+     img3.addEventListener("mouseover",third);
+     img3.addEventListener("mouseout",third1);
+     img4.addEventListener("mouseover",four);
+     img4.addEventListener("mouseout",four1);
+     
+     
+function first(){
+	x.value="hai";
+}
+function first1(){
+	x.value="";
+}
+function second(){
+	x.value="hello";
+}
+function second1(){
+	x.value="";
+}function third(){
+	x.value="how are you";
+}
+function third1(){
+	x.value="";
+}function four(){
+	x.value="welcome";
+}
+function four1(){
+	x.value="";
+}
+     
+	 	</script>
+	 </div>
+</body>
+</html>

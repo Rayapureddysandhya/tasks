@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo</title>
+	 <style>
+		#demo{
+			text-align:center; 
+			margin-top:30px;
+			margin:auto; 
+			width:60%;
+			height:200px;
+			background-color:gray;
+			color:black;  
+		}
+		#demo input{
+			outline:0px;
+			border:0px;
+			border-style:none;
+			background: transparent;
+			border-bottom:1px solid white;
+		}
+	</style> 
+</head>
+<body>
+<form id="demo" > 
+<h2>FORM</h2>
+<label>NAME</label><input type="text" name="" id="name1"  placeholder="enter your name">
+<br><br><br>
+<label>PASSWORD</label><input type="password" name="" id="pwd"  placeholder="enter your password"><br><br>
+<br>
+<label>NUMBER</label><input type="number" name=""  id="numbers" placeholder="enter number"><br><br>
+ </form> 
+ <button type="btn" onclick="firstname()">Submit</button>
+<script>
+        
+	 function firstname(){
+	     var a=document.getElementById("name1").value;
+		 var b=document.getElementById("pwd").value;	
+		 var c=document.getElementById("numbers").value;
+		 var ab=document.createElement("div");
+		 
+		  //  s.innerHTML=x;
+		 // ab.addEventLister("click", second());
+
+		 var bc=document.createElement("ul");
+		 var A1=document.createElement("p");
+		 var A2=document.createElement("p");
+		 var A3=document.createElement("p");
+		 var A4=document.createElement("img");
+		
+		 A4.setAttribute('src',"layer1.png");
+		  var s=document.createElement("p");
+		  s.innerHTML="x";
+		  ab.appendChild(s);
+		  s.addEventListener("click", second);
+          
+		 A1.innerHTML=a;
+		 A2.innerHTML=b;
+		 A3.innerHTML=c;
+		 bc.appendChild(A1);
+		 bc.appendChild(A2);
+		 bc.appendChild(A3);
+		 ab.appendChild(bc);
+		 ab.appendChild(A4);
+		 // ab.appendChild(s);
+		 ab.style.backgroundColor="gray";
+		 ab.style.width="400px";
+		 ab.style.height="200px";
+		 ab.style.float="left";
+		 ab.style.marginLeft="30px";
+		
+		 ab.style.marginTop="0px";
+         A4.style.float="right";
+         
+		 document.body.appendChild(ab);
+function second(){
+
+		  ab.style.display="none";
+          }
+		  
+
+	}
+
+	
+</script>
+</body>
+</html>

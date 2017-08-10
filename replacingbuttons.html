@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+	<style>
+		#home{
+			color:blue;
+			width:600px;
+			font-size:18px;
+			padding:5px;s  
+			font-family:italic; 
+		}
+		
+		#contact{
+			border:200px;s
+			color:orange;s
+		}
+	</style>
+</head>
+<body>
+<div class="section">
+<button onclick="first()" >hello</button>
+<button onclick="second()" >hai</button>
+<button onclick="third()">welcome</button>
+<p id="home"> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p id="about">WELCOME</p>
+<p id="contact">HAI</p>
+<script>
+	var a=document.getElementById("home");
+    var b=document.getElementById("about");
+    var c=document.getElementById("contact");
+    function first(){
+   a.style.display="block";
+   b.style.display="none";
+   c.style.display="none";
+    }
+    function second(){
+   a.style.display="none";
+   b.style.display="block";
+   c.style.display="none";
+    }
+    function third(){
+   a.style.display="none";
+   b.style.display="none";
+   c.style.display="block";
+    }
+</script>	
+</div>
+</body>
+</html>

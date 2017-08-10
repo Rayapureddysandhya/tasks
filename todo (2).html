@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>op</title>
+	<style type="text/css">
+		ul li input[type="text"]{
+      display: none;
+    }
+    ul li.editmode input[type="text"]{
+      /*display: inline-block;*/
+    }
+    ul li.editmode label{
+      display: none;
+    }
+	</style>
+</head>
+<body>
+<input type="text" placeholder="text" id="int">
+<input type="button" value="add" id="btn" onclick="add()">
+ <h1>completed</h1>
+ <ul id="list1"></ul>
+ <hr>
+ 	<h1>incompleted</h1>
+ 	<hr>
+<ul id="list2"></ul>
+</body>
+<script type="text/javascript">
+	var input=document.getElementById('int');
+	var button=document.getElementById('btn');
+	var completed=document.getElementById('list1');
+	var incompleted=document.getElementById('list2');
+
+	 function add(){
+	 	var check=document.createElement('input');
+	 	check.type="checkbox";	 	
+	 	var label=document.createElement('label');
+	 	var inttt=document.createElement("input");
+	 	inttt.type="text";
+        var edit=document.createElement('button');
+        var del=document.createElement('button');
+        edit.innerHTML='edit';
+        del.innerHTML='delete';
+        var lit=document.createElement("li");
+
+        label.innerHTML=int.value;
+
+         lit.appendChild(check);
+         lit.appendChild(label);
+         lit.appendChild(inttt);
+         lit.appendChild(edit);
+         lit.appendChild(del);
+         
+       
+       completed.appendChild(lit);
+       check.onchange=move;
+       del.onclick=exit.bind(lit);
+      edit.onclick=edittask.bind(lit);
+   
+    }	 
+    var exit =function()
+    {
+    	var lit=this.parentNode;
+        lit.parentNode.removeChild(lit);
+    }
+    var move=function(){
+    if(this.parentNode.parentNode.id=="list1"){
+    incompleted.appendChild(this.parentNode);
+
+    }
+    else if(this.parentNode.parentNode.id=="list2"){
+    completed.appendChild(this.parentNode);
+    }
+}
+var edittask=function(){
+    var list = this;
+    var inttt=list.querySelector('input[type=text]');
+    var lable1 = list.querySelector('label');
+    if (list.getAttribute('class') === "editmode") {
+    lable1.innerHTML=inttt.value;
+    list.setAttribute('class','');
+    }
+    else if (list.getAttribute('class') !== "editmode"){
+    inttt.value=lable1.innerHTML;
+    list.setAttribute('class','editmode');
+    }
+}
+    	  
+    
+</script>
+</html>

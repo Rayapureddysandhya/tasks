@@ -1,0 +1,229 @@
+.information h1{
+	color:white !important;
+}
+.navbar-nav li,a{
+	color:white;
+}
+
+.menulistitems  li a{
+color:white !important;
+padding-left:20px !important;
+display: inline-block !important;
+}
+
+.navbar-inverse .navbar-nav li>a:hover{
+	background-color:blue !important;
+}
+
+    .itemactive img{
+    	margin-bottom:20px; 
+    }
+	
+	
+	.sannn {
+		padding-left: 300px !important;	
+		padding-top:21px !important; 
+	}
+	.carousel-inner{
+		margin-bottom:20px !important; 
+	}
+	.carousel{
+		margin-bottom:100px !important;
+		margin-top: -20px !important; 
+	}
+	.carousel-caption button{
+margin-bottom:863px !important;
+color:white; 
+width:160px;
+height:60px;
+background-color:blue; 
+
+background-color:; 
+	}
+	#content1{
+float:right;
+	}
+	#content1 p{
+		padding:17px!important;
+		padding-left:9px!important; 
+	}
+	#content1 h1{
+		color:pink !important;
+	}
+	#leftimage img{
+		padding-left:20px!important;
+		width:520px!important;
+		height:330px!important;
+	}
+	#content2 p{
+		padding:17px!important;
+		padding-left: 9px!important;
+	}
+	#content2 h1{
+		color:pink !important;
+	}
+	#rightimg img{
+		/*padding-left:50px!important;*/
+		width:450px!important;
+		height:268px!important;
+		padding-bottom:30px; 
+	}
+	#center h1{
+		text-align:center!important;
+		color:blue!important; 
+	}
+	#image1 img{
+		width:320px;
+		height:240px;
+	}
+	#image2 img{
+		width:320px;
+		height:240px;
+	}
+	#image3  img{
+		width:334px;
+		height:240px;
+		padding-left:20px!important;
+		padding-top:20px; 
+	}
+	#image4 img{
+		width:320px;
+		height:240px;
+		padding-top:20px; 
+	}
+	#leftcontent2 h1{
+		color:yellow!important;
+	}
+	#leftcontent2 p{
+		width:100%!important;
+	}
+	#movecontent button{
+		width:160px;
+		height:60px;
+		padding:10px; 
+		background-color:brown;
+	}
+	#movecontent h1{
+		/*padding-left:130px!important;*/
+		text-align:center; 
+	}
+	.total-content{
+
+		box-shadow:0px 0px 15px #888888 ;
+
+	}
+	
+	#image{
+		background-image:url("../images/newimage1.jpg");
+		padding:300px;
+		 width: 100%!important;
+        /*height: 100px;
+   
+    -webkit-transition: width 2s;  For Safari 3.1 to 6.0 
+    transition: width 2s,height 3s;*/
+}
+
+/*#image:hover {
+    width: 300px;
+    height:300px;
+}*/
+   
+	.applyfororder {
+		background-color:yellow;
+		padding:20px;	
+
+	}
+	/*div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 
+    transition: width 2s,height 4s;
+}*/
+
+/*div:hover {
+    width: 300px;
+    height:300px;
+}*/
+#bottom1{
+padding-left:120px; 
+}
+#bottom2{
+padding-left:110px; 
+
+}
+#bottom3{
+padding-left:110px; 
+}
+#endingpart{
+	margin-top:5px; 
+	width:100%;
+	background-color:#f4c542;
+	padding:20px 0px 200px 0px;
+}
+#bottom3 input{
+	border:none;
+border-bottom:1px solid #EAFAF1!important;
+outline:0px!important;
+
+}
+.content h2{
+color:white !important;
+}
+.dad {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+.dad  .son-1 {
+    position: absolute;
+    height: 100%;
+    width: 150%;
+    -moz-transition: all 5s;
+    -webkit-transition: all 5s;
+    transition: all 5s;
+    -moz-transform: scale(1,1);
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    background-image: url("../images/newimage1.jpg");
+    -moz-background-size: cover;
+/*    -webkit-background-size: cover;
+*/    background-size: cover;
+    z-index: -1;
+}
+
+.dad:hover > .son-1 {
+    -moz-transform: scale(2,2);
+    -webkit-transform: scale(2,2);
+    transform: scale(2,2);    
+}
+
+.son-text {
+    color: #fcfcfc;
+  font-size: 2em;
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  width: 100%;
+  height: 400px;
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  padding-top: 15vh;
+}
+
+.son-text:hover {
+  background-color: #22313F;
+  opacity: 0.7;
+}
+
+.son-span {
+  background: #fcfcfc;
+  color: #22313F;
+  padding: 15px 45px;
+  font-family: 'Josefin Slab', serif;
+  font-style: italic;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>imagesarranging</title>
+	<link rel="stylesheet" type="text/css" href="pavanjavascripttask.css">
+
+</head>
+<body>
+
+<div class="container">
+	
+	<img src="back.jpeg" id="img1">
+	<img src="javascriptimages5.jpeg" id="img2">	
+	<img src="vam.jpeg" id="img3">
+
+
+ <div id="dol" style="text-align:center"></div>
+    <script>
+		
+	
+
+        var obj1=document.getElementById('img1');
+		var obj2=document.getElementById('img2');
+		var obj3=document.getElementById('img3');
+		var divcls=document.getElementById('dol');
+
+		var img1=document.createElement("img");
+		img1.src="back.jpeg"
+		var img2=document.createElement("img");
+		img2.src="javascriptimages5.jpeg"
+		var img3=document.createElement("img");
+		img3.src="vam.jpeg"
+obj1.onclick=function () {
+	
+	divcls.appendChild(img1);
+	img1.style.width="700px"
+	img2.style.height="700px"
+	img2.remove();
+	img3.remove();
+}
+obj2.onclick=function () {
+	
+	divcls.appendChild(img2);
+	img2.style.width="700px"
+	img2.style.height="700px";
+	img1.remove();
+	img3.remove();
+}
+obj3.onclick=function () {
+	
+	divcls.appendChild(img3);
+	img3.style.width="700px"
+	img3.style.height="700px"
+	img1.remove();
+	img2.remove();
+}
+
+
+// 		 function etImg(img){
+// var x= document.getElementById("large");
+// x.src=img;
+// 		 }
+// var menu= document.getElementById("menu")
+// 		menu.addEventListner(click,function(img){
+// var x= document.getElementById("large");
+// x.src=img;
+// 		})
+	</script>
+
+</body>
+</html>

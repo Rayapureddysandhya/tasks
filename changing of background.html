@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task2</title>
+</head>
+<body>
+
+<div>
+
+<script>     
+     var c=document.createElement("div");
+	var b=document.createElement("input");
+	  b.type="text";
+	var b2=document.createElement("button");
+	b2.innerHTML="submit";
+	b2.type="btn";
+	b2.style.width="120px";
+	b2.style.padding="4px";
+	c.style.width="200px";
+	c.style.height="48px";
+	c.style.border="1px solid blue";
+	c.style.marginTop="16px";
+
+     
+	document.body.appendChild(b);
+	document.body.appendChild(b2);
+	document.body.appendChild(c);
+	
+	   b2.onclick=function first(){
+	  
+	  c.style.backgroundColor=b.value;
+	}
+	
+	</script>
+</div>
+</body>
+</html>
