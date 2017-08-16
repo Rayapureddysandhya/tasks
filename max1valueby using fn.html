@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+    var but=document.createElement("button");
+    document.body.appendChild(but);
+    but.innerHTML="submit";
+	
+	 but.addEventListener("click" ,max1);
+	 // var array=[1,2,3,4,5,6,7,8,10];
+     // function firstname(){
+     // for(var i=0;i<=array.length;i++)
+     // {
+     // 	var demo;
+     // 	Math.max.apply(demo,array[i]);
+     // }
+ 
+     // var demo;
+     // console.log(Math.min.apply(demo,array));
+     // var array=[1,2,3,4,5,6,7,8,10];
+    
+    function max1()
+    {
+    	var arr=[2,76,54,3,833,66,45,88];
+    	var bg=0;
+    	for(var i=0;i<arr.length;i++)
+    	{
+    		if(arr[i]>bg)
+    		{
+    			bg=arr[i];
+    		}
+    	}
+    	console.log(bg);
+    }
+</script>
+</body>
+</html>
